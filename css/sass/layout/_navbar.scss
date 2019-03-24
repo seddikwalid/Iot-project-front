@@ -1,0 +1,96 @@
+/* Start NavBar */
+
+.navbar{
+    background: $navbarBackground;
+    margin-bottom: 0;
+    border:none;
+    height: 64px;
+    .navbar-brand{
+      margin-left: -16px;
+      width: 250px;
+      height: 64px;
+      padding: 15px 20px;
+      background-color: $brandBackground;
+      a{
+        font-size: 18px;
+        color: $textColor;
+        font-weight: bold;
+      }
+    }
+    .logout-lang{
+        margin-left: 15px;
+        .dropdown-menu{
+          top: 116%;
+          left: -300px;
+          background-color: $theme;
+          border: none;
+          width: 350px;
+          min-height: 154px;
+          .action-shortcut{
+            padding: 10px;
+            img{
+              width:80px;
+              height: 80px;
+              border-radius: 0;
+              margin-right: 10px;
+            }
+            .profile-info{
+              h2{
+                font-size: 18px;
+                color: $greyColor;
+              }
+              h3{
+                font-size: 15px;
+                color: $greyColor;
+                margin-top: -3px;
+              }
+            }
+            ul{
+              margin-top: 25px;
+              li{
+                color: $greyColor;
+                font-size: 17px;
+                padding: 7px 0 7px 0;
+                width: 300px;
+                i{
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+        }
+      img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        @include prefixer(background-size, cover, webkit moz o ms);
+      }
+    }
+    .dropdown-toggle{
+      &::after{
+        display: none;
+      }
+    }
+    .navbar-nav{
+      .nav-item{
+        cursor: pointer;
+        text-align: center;
+        padding: 22px 22px;
+        height: 64px;
+        @include prefixer(transition, all .2s ease-in-out, webkit moz o ms);
+        i{
+          color: $textColor;
+          font-size: 19px;
+          margin: 2px -1px 5px 0px;
+        }
+        &:hover{
+          background-color: rgba($navbarBackground, .3);
+        }
+        &:first-child{
+          margin-left: -20px;
+        }
+      }
+    }
+}
+
+/* End NavBar */

@@ -4,8 +4,17 @@ $minSmall: "(min-width: 768px)";
 $minMedium: "(min-width: 992px)";
 $minLarge: "(min-width: 1200px)";
 
-$redColor: #e249ce;
-$greyColor: #9c9c9c;
+//#2962FF, #fe5419, #00b0ff, #6659f7, #d1d1d1
+
+//Dark-heme: #0f131c  Wide-theme f6f6f6
+$theme: #f6f6f6;
+$navbarBackground: #273146;
+$sliderBackground: #273146;
+$brandBackground: #273146;
+
+// #d1d1d1, #6c757d
+$textColor: #d1d1d1;
+$greyColor: #9098ac;
 
 $float-left: left;
 $float-right: right;

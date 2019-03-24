@@ -12,10 +12,15 @@
 ** Animation Mixin
 ** Auto Add Prefixes To Animation
 */
+.view-profile {
+  background-color: #273146;
+  width: 80px;
+  height: 40px;
+  color: #d1d1d1;
+  padding: 5px 15px;
+}
+
 * {
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -28,7 +33,114 @@ body {
   margin: 0;
   position: relative;
 }
+body a {
+  text-decoration: none;
+}
+body a:hover {
+  text-decoration: none;
+  color: #d1d1d1;
+}
+body li {
+  list-style: none;
+}
 
+/* Start NavBar */
+.navbar {
+  background: #273146;
+  margin-bottom: 0;
+  border: none;
+  height: 64px;
+}
+.navbar .navbar-brand {
+  margin-left: -16px;
+  width: 250px;
+  height: 64px;
+  padding: 15px 20px;
+  background-color: #273146;
+}
+.navbar .navbar-brand a {
+  font-size: 18px;
+  color: #d1d1d1;
+  font-weight: bold;
+}
+.navbar .logout-lang {
+  margin-left: 15px;
+}
+.navbar .logout-lang .dropdown-menu {
+  top: 116%;
+  left: -300px;
+  background-color: #f6f6f6;
+  border: none;
+  width: 350px;
+  min-height: 154px;
+}
+.navbar .logout-lang .dropdown-menu .action-shortcut {
+  padding: 10px;
+}
+.navbar .logout-lang .dropdown-menu .action-shortcut img {
+  width: 80px;
+  height: 80px;
+  border-radius: 0;
+  margin-right: 10px;
+}
+.navbar .logout-lang .dropdown-menu .action-shortcut .profile-info h2 {
+  font-size: 18px;
+  color: #9098ac;
+}
+.navbar .logout-lang .dropdown-menu .action-shortcut .profile-info h3 {
+  font-size: 15px;
+  color: #9098ac;
+  margin-top: -3px;
+}
+.navbar .logout-lang .dropdown-menu .action-shortcut ul {
+  margin-top: 25px;
+}
+.navbar .logout-lang .dropdown-menu .action-shortcut ul li {
+  color: #9098ac;
+  font-size: 17px;
+  padding: 7px 0 7px 0;
+  width: 300px;
+}
+.navbar .logout-lang .dropdown-menu .action-shortcut ul li i {
+  margin-right: 5px;
+}
+.navbar .logout-lang img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+.navbar .navbar-nav .nav-item {
+  cursor: pointer;
+  text-align: center;
+  padding: 22px 22px;
+  height: 64px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.navbar .navbar-nav .nav-item i {
+  color: #d1d1d1;
+  font-size: 19px;
+  margin: 2px -1px 5px 0px;
+}
+.navbar .navbar-nav .nav-item:hover {
+  background-color: rgba(39, 49, 70, 0.3);
+}
+.navbar .navbar-nav .nav-item:first-child {
+  margin-left: -20px;
+}
+
+/* End NavBar */
 /* Start Footer */
 /* End Footer */
 
