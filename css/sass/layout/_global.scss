@@ -4,7 +4,17 @@
   padding: 0;
   border: 0;
 }
-
+::-webkit-scrollbar {
+width: 15px;
+height: 15px;
+}
+::-webkit-scrollbar-track-piece  {
+background-color: #C2D2E4;
+}
+::-webkit-scrollbar-thumb:vertical {
+height: 30px;
+background-color: red;
+}
 body{
   background-color: $theme;
   height: 100%;
@@ -19,5 +29,40 @@ body{
   }
   li{
     list-style: none;
+  }
+  .content{
+    margin: 130px 30px;
+    .page-title-path{
+      h2{
+        font-weight: bold;
+        font-size: 22px;
+        color: $mainTitle;
+      }
+      p{
+        text-align: right;
+        color: $greyColor;
+        span{
+          color: #3E71F2;
+        }
+      }
+    }
+    .component-section{
+      margin-top: 30px;
+      .help{
+        h3{
+          color: $mainTitle;
+          margin-bottom: 25px;
+        }
+        h4{
+          color: $greyColor;
+        }
+        .help-list{
+          margin-left: 18px;
+          li{
+            list-style-type: circle !important;
+          }
+        }
+      }
+    }
   }
 }

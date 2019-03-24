@@ -21,10 +21,11 @@
         margin-left: 15px;
         .dropdown-menu{
           top: 116%;
-          left: -300px;
+          left: -250px;
           background-color: $theme;
           border: none;
-          width: 350px;
+          width: 300px;
+          padding: 0 20px;
           min-height: 154px;
           .action-shortcut{
             padding: 10px;
@@ -72,6 +73,22 @@
       }
     }
     .navbar-nav{
+      .language{
+        margin-top: -15px;
+        margin-right: -5px;
+        .lang{
+          width: 35px;
+          height: 20px;
+          @include prefixer(background-size, cover, webkit moz o ms);
+        }
+        .dropdown-menu{
+          margin-top: 7px;
+          .lang{
+            width: 30px;
+            height: 18px;
+          }
+        }
+      }
       .nav-item{
         cursor: pointer;
         text-align: center;
@@ -83,8 +100,25 @@
           font-size: 19px;
           margin: 2px -1px 5px 0px;
         }
+        .bars{
+          display: block;
+          background-color: $textColor;
+          margin-bottom: 5px;
+          height: 2px;
+          width: 15px;
+          @include prefixer(transition, all .2s ease-in-out, webkit moz o ms);
+          &:first-child{
+            margin-top: 4px;
+          }
+        }
+        .long{
+          width: 25px;
+        }
         &:hover{
-          background-color: rgba($navbarBackground, .3);
+          background-color: rgba($navbarBackground, 0.75);
+          .bars{
+            width: 25px;
+          }
         }
         &:first-child{
           margin-left: -20px;
