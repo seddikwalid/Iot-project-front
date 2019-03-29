@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+	 <link href="assets/css/login.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="main-wrapper ">
+
+    <div class= "  auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url('assets/images/back4.jpg')  no-repeat left top;">
+        <div class="container">
+            <div class="myrow" >
+                <div class="mycol-md-8 " id="demo-text" >
+
+                    <span class="db"><img src="assets/images/logoIot.jpg" style="width: 300px; height: 80px;" alt="logo"></span>
+                    <h1 class="">Welcome to our <span class=" black-text ">IOT Platforme</span></h1>
+                    <p>Connect Your Devices and Unify Your Data to Build Better IoT Services. <a href="about" class="text-lighten-5 ">more...</a></p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="auth-box auth-sidebar">
+                <div id="loginform">
+                    <div class="text-center">
+                        <h3 class=" center">Sign In </h3>
+
+
+                    </div>
+                    <!-- Form -->
+                    <div class="myrow">
+                        <form class="mycol s12" action="index.html">
+                            <!-- email -->
+                            <div class="myrow">
+                                <div class="input-field mycol s12">
+                                    <input id="email" type="email" class="validate" required="">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <!-- pwd -->
+                            <div class="myrow">
+                                <div class="input-field mycol s12">
+                                    <input id="password" type="password" class="validate" required="">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                            <!-- pwd -->
+                            <div class="myrow m-t-5">
+                                <div class="mycol s7 m-b-30">
+                                    <label>
+                                        <input type="checkbox">
+										<pseudo:before><!--<pseudo:before--></pseudo:before>
+                                        <span>Remember Me?</span>
+										<pseudo:after><!--<pseudo:before--></pseudo:after>
+                                    </label>
+                                </div>
+                                <div class="mycol s5 right-align"><a href="#" class="link" id="to-recover">Forgot Pwd?</a></div>
+                            </div>
+                            <!-- pwd -->
+                            <div class="myrow m-t-40">
+                                <div class="mycol s12">
+                                    <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="center-align m-t-20 db">
+                        <a href="#" class="btn indigo darken-1 tooltipped m-r-5" data-position="top" data-tooltip="Login with Facebook"><i class="fab fa-facebook-f"></i></a> <a href="#" class="btn orange darken-4 tooltipped" data-position="top" data-tooltip="Login with Facebook"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+                    <div class="center-align m-t-20 db">
+                        Don't have an account? <a href="singup.html">Sign Up!</a>
+                    </div>
+                </div>
+                <div id="recoverform">
+                    <div class="p-l-10">
+                        <h4 class=" m-b-0 m-t-40">Recover password</h4>
+                        <small>Enter your Email and instructions will be sent to you!</small>
+                    </div>
+                    <div class="myrow">
+                        <!-- Form -->
+                        <form class="mycol s12" action="index.html">
+                            <!-- email -->
+                            <div class="myrow">
+                                <div class="input-field mycol s12">
+                                    <input id="email1" type="email" class="validate" required="">
+                                    <label for="email1" class="active">Email</label>
+                                </div>
+                            </div>
+                            <!-- pwd -->
+                            <div class="myrow m-t-20">
+                                <div class="mycol s12">
+                                    <button class="btn btn-danger btn-lg btn-block" type="submit" name="action">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="material-tooltip" style="top: 347px; left: 493.625px; visibility: visible; opacity: 0; transform: translateX(0px) translateY(0px);"><div class="tooltip-content">Login with Facebook</div></div>
+	<div class="material-tooltip" style="top: 347px; left: 550.625px; visibility: visible; opacity: 0; transform: translateX(0px) translateY(0px);"><div class="tooltip-content">Login with Google</div></div>
+	<div class="material-tooltip">
+		<div class="tooltip-content">
+
+		</div>
+	</div>
+	<div class="material-tooltip"><div class="tooltip-content"></div></div>
+</div>
+<!-- ============================================================== -->
+<!-- All Required js -->
+<!-- ============================================================== -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/myscripte.min.js"></script>
+<!-- ============================================================== -->
+<!-- This page plugin js -->
+<!-- ============================================================== -->
+<script>
+    $('.tooltipped').tooltip();
+    // ==============================================================
+    // Login and Recover Password
+    // ==============================================================
+    $('#to-recover').on("click", function() {
+        $("#loginform").slideUp();
+        $("#recoverform").fadeIn();
+    });
+    $(function() {
+        $(".preloader").fadeOut();
+    });
+</script>
+
+</body>
+
+
+</html>
